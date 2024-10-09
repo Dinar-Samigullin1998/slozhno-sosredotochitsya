@@ -165,7 +165,7 @@
       line-height: 0.88;
   }
 
-  .header__decorated-icon{
+  .header__decorated-icon {
       margin-block-end: 20.3%;
       display: inline-block;
       margin-left: auto;
@@ -234,7 +234,7 @@
 }
 
 
-.section:first-of-type  {
+.section:first-of-type {
   margin-top: 60px;
 }
 
@@ -276,7 +276,7 @@
   flex: 0 1 32%;
 }
 
-.title__content{
+.title__content {
   font-size: var(--primary-font-size);
   color: var(--main-title-color);
   background-color: var(--color-primary);
@@ -295,7 +295,7 @@
   padding-block-end: 20px;
 }
 
-.special__section  {
+.special__section {
   display: flex;
   flex-wrap: wrap;
   width: 30%;
@@ -426,7 +426,6 @@
  }
 
  .container__images {
-    max-width: 1092px;
     margin-block-start: 20px;
     display: grid; 
     grid-template-columns: repeat(3, 1fr);

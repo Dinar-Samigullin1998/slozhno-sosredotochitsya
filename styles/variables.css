@@ -8,7 +8,7 @@
   --font-weight-regular: 400;
   --font-weight-bolt: 700;
   --color-primary: rgba(255, 0, 112, 1);
-  --background-image: url(/images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --accent-color: rgba(219, 0, 255, 1);
   --main-color: rgba(255, 0, 112, 1);
   --main-title-color: rgba(0, 0, 40, 1);
@@ -21,5 +21,4 @@
   --font-weight-bolt: 700;
   --decoration-color: rgba(255, 0, 112, 1);
   --color-link: rgba(241, 178, 206, 1);
-
 }
