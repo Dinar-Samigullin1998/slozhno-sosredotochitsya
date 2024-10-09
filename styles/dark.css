@@ -3,8 +3,49 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-dark {
+  --primary-font-family: "IBM Plex Mono";
+  --primary-font-size: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bolt: 700;
+  --color-primary: rgba(255, 0, 112, 1);
+  --background-image: url(/images/cover-image-dark.png);
+  --accent-color: rgba(219, 0, 255, 1);
+  --main-color: rgba(255, 0, 112, 1);
+  --main-title-color: rgba(0, 0, 40, 1);
+  --text-color: rgba(241, 178, 206, 1);
+  --text-shadow: 4px 4px 0 var(--shadow-color);
+  --shadow-color: rgba(255, 0, 112, 1);  
+  --special-color: rgba(255, 0, 112, 0.4);
+  --primary-font-size: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bolt: 700;
+  --decoration-color: rgba(255, 0, 112, 1);
+  --color-link: rgba(241, 178, 206, 1);
+} 
+
 
 .page.theme_dark {
+  --primary-font-family: "IBM Plex Mono";
+  --primary-font-size: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bolt: 700;
+  --color-primary: rgba(255, 0, 112, 1);
+  --background-image: url(/images/cover-image-dark.png);
+  --accent-color: rgba(219, 0, 255, 1);
+  --main-color: rgba(255, 0, 112, 1);
+  --main-title-color: rgba(0, 0, 40, 1);
+  --text-color: rgba(241, 178, 206, 1);
+  --text-shadow: 4px 4px 0 var(--shadow-color);
+  --shadow-color: rgba(255, 0, 112, 1);  
+  --special-color: rgba(255, 0, 112, 0.4);
+  --primary-font-size: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bolt: 700;
+  --decoration-color: rgba(255, 0, 112, 1);
+  --color-link: rgba(241, 178, 206, 1);
+
+
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
