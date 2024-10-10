@@ -114,7 +114,7 @@
 .title {
   color: var(--accent-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 1.83;
+  line-height: 2.3;
   text-shadow: var(--text-shadow);
 }
 
@@ -141,10 +141,9 @@
 
 
 @media(width <=768px) {
-
-  .header {
-    margin-block-end: 0;
-  }
+  /*.header {
+    margin-bottom: 0;
+  }*/
 
   .header__paragraph {
     align-self: center;
@@ -214,7 +213,7 @@
 
 .section:not(:first-of-type):not(:last-of-type) {
   /*margin-block-start: 79px;*/
-  margin-block-start: 80px;
+  margin-top: 80px;
 }
 
 
@@ -264,12 +263,12 @@
   font-size: var(--primary-font-size);
   color: var(--main-title-color);
   background-color: var(--color-primary);
-  margin-block-end: 10px;
+  margin-bottom: 10px;
 }
 
 .content:not(:last-of-type) {
   /*margin-block-end: 18.5px;*/
-  margin-block-end: 20px;
+  margin-bottom: 20px;
 }
 
 .text__content {
@@ -287,14 +286,14 @@
 }
 
 .title__block {
-  margin-block-end: 20px;
+  margin-bottom: 20px;
 }
 
 .title__content-incline {
   color: var(--main-title-color);
   font-weight: 400;
   background-color: var(--color-primary);
-  margin-block-end: 10px;
+  margin-bottom: 10px;
 }
 
 .textual__link {
@@ -367,7 +366,7 @@
 
   .section:not(:first-of-type):not(:last-of-type) {
     /*margin-block-start: 49px;*/
-    margin-block-start: 50px;
+    margin-top: 50px;
   }
 
   /*.container__special {
@@ -415,7 +414,7 @@
  }
 
 .container__images {
-  margin-block-start: 20px;
+  margin-top: 20px;
   display: grid; 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
@@ -436,13 +435,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-block-start: 10px;
+    margin-top: 10px;
   }
  }
 
  .footer {
   display: flex;
-  margin-block-start: 60px;
+  margin-top: 60px;
   position: relative;
   height: 100vh;
   min-height: 613px;
@@ -462,7 +461,7 @@
  @media(width <=640px) {
   .footer {
     /*margin-block-start: 42px;*/
-    margin-block-start: 40px;
+    margin-top: 40px;
     min-height: unset;
     padding: 10px;
   }
