@@ -12,14 +12,9 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-.title {
-  color: var(--accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 1.83;
-  text-shadow: var(--text-shadow);
-}
-
 .header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
   min-height: 613px;
   box-sizing: border-box;
@@ -35,7 +30,7 @@
 }
 
 .header__theme-menu {
-  flex: 0 0 55.5%;
+  /*flex: 0 0 55.5%;*/
   width: 55.5%;
   line-height: 0.9;
   margin-inline-start: auto;
@@ -126,8 +121,14 @@
   width: 100%;
 }
 
+.title {
+  color: var(--accent-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 1.83;
+  text-shadow: var(--text-shadow);
+}
+
 .header__title {
-  margin-block-start: 20%;
   margin-inline-start: -20px;
 }
 
@@ -179,7 +180,8 @@
 
   .header__type {
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .header__theme-menu-list {
