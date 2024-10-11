@@ -3,34 +3,18 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme_light {
-  --color-primary: rgba(255, 141, 203, 1);
-  --background-image: url(../images/cover-image-light.png);
-  --accent-color: rgba(255, 194, 230, 1);
-  --main-color: rgba(53, 52, 48, 1);
-  --main-title-color: rgba(53, 52, 48, 1);
-  --text-color: rgba(53, 52, 48, 1);
-  --text-shadow: 4px 4px 0 var(--shadow-color);
-  --primary-font-family: "IBM Plex Mono";
-  --primary-font-size: 18px;
-  --font-weight-regular: 400;
-  --font-weight-bolt: 700;
-  --special-color: rgba(50, 49, 45, 0.4);
-  --shadow-color: rgba(255, 141, 203, 1);
-  --decoration-color: rgba(53, 52, 48, 1);
-  --color-link: rgba(53, 52, 48, 1);
-} 
 
 @media (prefers-color-scheme: light) {
   :root {
     --color-primary: rgba(255, 141, 203, 1);
+    --background-color: rgba(255, 241, 247, 1);
     --background-image: url(../images/cover-image-light.png);
     --accent-color: rgba(255, 194, 230, 1);
     --main-color: rgba(53, 52, 48, 1);
     --main-title-color: rgba(53, 52, 48, 1);
     --text-color: rgba(53, 52, 48, 1);
     --text-shadow: 4px 4px 0 var(--shadow-color);
-    --primary-font-family: "IBM Plex Mono";
+    --primary-font-family: "IBM Plex Mono", monospace;
     --primary-font-size: 18px;
     --font-weight-regular: 400;
     --font-weight-bolt: 700;
@@ -47,13 +31,15 @@
 
 .page.theme_light {
   --color-primary: rgba(255, 141, 203, 1);
+  --background-color: rgba(255, 241, 247, 1);
   --background-image: url(../images/cover-image-light.png);
   --accent-color: rgba(255, 194, 230, 1);
   --main-color: rgba(53, 52, 48, 1);
   --main-title-color: rgba(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
+  --title-shadow: 4px 4px 0 var(--color-header);
   --text-shadow: 4px 4px 0 var(--shadow-color);
-  --primary-font-family: "IBM Plex Mono";
+  --primary-font-family: "IBM Plex Mono", monospace;
   --primary-font-size: 18px;
   --font-weight-regular: 400;
   --font-weight-bolt: 700;
@@ -61,6 +47,7 @@
   --shadow-color: rgba(255, 141, 203, 1);
   --decoration-color: rgba(53, 52, 48, 1);
   --color-link: rgba(53, 52, 48, 1); 
+  --color-header: rgba(255, 0, 112, 1);
 }
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,

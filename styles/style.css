@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: var(--primary-font-family);
+  font-family: var(--primary-font-family), monospace;
   font-size: var(--primary-font-size);
   background-image: var(--background-image);
   background-color: var(--background-color);
@@ -20,6 +20,7 @@
   box-sizing: border-box;
   padding: 20px;
   color: var(--color-primary);
+  position: relative;
 }
 
 .header__type {
@@ -115,7 +116,7 @@
   color: var(--accent-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 2.3;
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--title-shadow);
 }
 
 .header__title {
@@ -141,10 +142,6 @@
 
 
 @media(width <=768px) {
-  /*.header {
-    margin-bottom: 0;
-  }*/
-
   .header__paragraph {
     align-self: center;
   }
@@ -212,7 +209,6 @@
 }
 
 .section:not(:first-of-type):not(:last-of-type) {
-  /*margin-block-start: 79px;*/
   margin-top: 80px;
 }
 
@@ -232,14 +228,17 @@
 }
 
 .title__section {
-  font-family: var(--primary-font-family);
+  font-family: var(--primary-font-family), monospace;
   font-size: var(--primary-font-size);
   color: var(--main-color);
 }
 
 .container {
-  flex: 0 0 66%;
-  font-family: var(--primary-font-family);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 0 66%;
+  font-family: var(--primary-font-family), monospace;
   font-size: var(--primary-font-size);
 }
 
@@ -255,8 +254,8 @@
   flex-wrap: wrap;
 }
 
-.special__block {
-  flex: 0 1 32%;
+.content {
+  flex:0 1 32%;
 }
 
 .title__content {
@@ -264,11 +263,6 @@
   color: var(--main-title-color);
   background-color: var(--color-primary);
   margin-bottom: 10px;
-}
-
-.content:not(:last-of-type) {
-  /*margin-block-end: 18.5px;*/
-  margin-bottom: 20px;
 }
 
 .text__content {
@@ -286,7 +280,9 @@
 }
 
 .title__block {
-  margin-bottom: 20px;
+  font-size: var(--primary-font-size);
+  color: var(--main-title-color);
+  background-color: var(--color-primary);
 }
 
 .title__content-incline {
@@ -301,6 +297,8 @@
   text-shadow: 1px 1.5px 0 var(--shadow-color);
   position: relative;
   display: inline-block;
+  top: 0;
+  right: 0;
 }
 
 .textual__link::after {
@@ -317,7 +315,21 @@
 }
 
 .textual__link:focus-visible {
-  outline: 1px solid var(--decoration-color);
+  outline: 1px solid var(--color-link);
+}
+
+@media (width < 990px) {
+  .container__special {
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 0 1 31%;
+  }
+
+  .title {
+    text-shadow: var(--text-shadow);
+  }
 }
 
 @media (width <=768px) {
@@ -328,23 +340,18 @@
   .container__special {
     display: flex;
     flex-direction: column;
-    /*gap: 19px;*/
     gap: 20px;
   }
 
-  .special__block {
-    flex-basis: 33%;
-  }
-
-  /*.title__block {
-    /*margin-block-end: 18px;
+  .title__block {
+    margin-block-end: 18px;
     
   }
 
   .content:not(:last-of-type) {
-    /*margin-block-end: 19px;
+    margin-block-end: 19px;
     
-  } */
+  } 
 } 
 
 @media(width <=640px) {
@@ -365,13 +372,8 @@
   }
 
   .section:not(:first-of-type):not(:last-of-type) {
-    /*margin-block-start: 49px;*/
     margin-top: 50px;
   }
-
-  /*.container__special {
-    gap: 17px;
-  }*/
 }
 
 .title__images-section {
@@ -425,9 +427,8 @@
   gap: 20px;
  }
 
- @media(width <=640px) {
+@media(width <=640px) {
   .section:last-of-type {
-    /*margin-top: 48px;*/
     margin-top: 50px;
   }
 
@@ -437,7 +438,7 @@
     gap: 10px;
     margin-top: 10px;
   }
- }
+}
 
  .footer {
   display: flex;
@@ -451,16 +452,21 @@
  }
 
 .title__footer {
-  font-family: var(--primary-font-family);
+  font-family: var(--primary-font-family), monospace;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: var(--font-weight-bolt);
   color: var(--accent-color);
-  text-shadow: 2px 2px 0 var(--shadow-color);
+  text-shadow: 2px 2px 0 var(--color-header);
 }
 
- @media(width <=640px) {
+@media (width <900px) {
+  .title__footer {
+    text-shadow: 2px 2px 0 var(--color-primary);
+  }
+}
+
+@media(width <=640px) {
   .footer {
-    /*margin-block-start: 42px;*/
     margin-top: 40px;
     min-height: unset;
     padding: 10px;
@@ -469,4 +475,5 @@
   .title__footer {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
- }
+}
+
