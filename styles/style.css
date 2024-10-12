@@ -141,7 +141,7 @@
 }
 
 
-@media(width <=768px) {
+@media(width <=1023px) {
   .header__paragraph {
     align-self: center;
   }
@@ -168,9 +168,13 @@
   .header__theme-menu-list {
     flex-direction: column;
   }
+
+  .title {
+    text-shadow: 4px 4px 0 var(--color-primary) ;
+  }
 }
 
-@media(width <=640px) {
+@media(width <=767px) {
   .header {
     min-height: unset;
     padding: 10px;
@@ -209,7 +213,7 @@
 }
 
 .section:not(:first-of-type):not(:last-of-type) {
-  margin-top: 80px;
+  margin-top: 79px;
 }
 
 
@@ -218,7 +222,7 @@
 }
 
 .section:last-of-type {
-  margin-top: 80px;
+  margin-top: 78px;
 }
 
 .section__text__reapeat {
@@ -236,7 +240,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19.5px;
   flex: 1 0 66%;
   font-family: var(--primary-font-family), monospace;
   font-size: var(--primary-font-size);
@@ -262,7 +266,7 @@
   font-size: var(--primary-font-size);
   color: var(--main-title-color);
   background-color: var(--color-primary);
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .text__content {
@@ -304,6 +308,8 @@
 .textual__link::after {
   content: "";
   position: absolute;
+  bottom: 0;
+  right: 0;
   display: none;
   height: 1px;
   width: 100%;
@@ -318,23 +324,9 @@
   outline: 1px solid var(--color-link);
 }
 
-@media (width < 990px) {
-  .container__special {
-    flex-wrap: wrap;
-  }
-
-  .content {
-    flex: 0 1 31%;
-  }
-
-  .title {
-    text-shadow: var(--text-shadow);
-  }
-}
-
-@media (width <=768px) {
+@media (width <=1023px) {
   .container {
-    flex-basis: 64.8%;
+    flex-basis: 65%;
   }
 
   .container__special {
@@ -342,19 +334,9 @@
     flex-direction: column;
     gap: 20px;
   }
-
-  .title__block {
-    margin-block-end: 18px;
-    
-  }
-
-  .content:not(:last-of-type) {
-    margin-block-end: 19px;
-    
-  } 
 } 
 
-@media(width <=640px) {
+@media(width <=767px) {
   .section {
     padding-inline: 10px;
   }
@@ -372,7 +354,11 @@
   }
 
   .section:not(:first-of-type):not(:last-of-type) {
-    margin-top: 50px;
+    margin-top: 48px;
+  }
+
+  .container {
+    gap: 19px;
   }
 }
 
@@ -427,7 +413,7 @@
   gap: 20px;
  }
 
-@media(width <=640px) {
+@media(width <=767px) {
   .section:last-of-type {
     margin-top: 50px;
   }
@@ -459,15 +445,15 @@
   text-shadow: 2px 2px 0 var(--color-header);
 }
 
-@media (width <900px) {
+@media (width <=1023px) {
   .title__footer {
     text-shadow: 2px 2px 0 var(--color-primary);
   }
 }
 
-@media(width <=640px) {
+@media(width <= 767px) {
   .footer {
-    margin-top: 40px;
+    margin-top: 41px;
     min-height: unset;
     padding: 10px;
   }
